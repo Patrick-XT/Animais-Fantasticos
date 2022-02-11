@@ -92,7 +92,7 @@ body {
   overflow-y: scroll;
   grid-column: 2;
 }
-.animais-lista li{
+.animais-lista li {
   cursor: pointer;
 }
 
@@ -204,7 +204,7 @@ html.aumento {
 }
 .js-tabcontent section.ativo {
   display: block !important;
- animation: show .5s forwards;
+  animation: show 0.5s forwards;
 }
 
 @keyframes show {
@@ -215,5 +215,33 @@ html.aumento {
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+.js .js-accordion dt {
+  cursor: pointer;
+}
+.js-accordion dd {
+  display: none;
+}
+.js-accordion dd.ativo {
+  display: block;
+  animation: slidedown 0.5s forwards;
+}
+.js-accordion dt::after {
+  content: "⬎";
+  margin-left: 10px;
+}
+.js-accordion dt.ativo::after {
+  content: "⬑";
+}
+
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1;
   }
 }
