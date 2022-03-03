@@ -4,6 +4,8 @@ import initTabNav from "./module/tab-nav.js"
 import initAccordion from "./module/accordion.js"
 import initModal from "./module/modal.js"
 import initTooltip from "./module/tooltip.js"
+import initDropdownMenu from "./module/dropdown-menu.js"
+
 
 
 
@@ -14,3 +16,4 @@ initTabNav();
 initAccordion()
 initModal()
 initTooltip()
+initDropdownMenu()
