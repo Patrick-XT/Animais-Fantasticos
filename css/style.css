@@ -494,3 +494,19 @@ html.aumento {
     grid-column: 1;
   }
 }
+
+[data-semana]::after {
+  display: inline-block;
+  content: "";
+  margin-left: 10px;
+  background: red;
+  padding: 4px;
+  border-radius: 50%;
+  color: white;
+  border: 2px solid black;
+  font-size: 0.8rem;
+}
+
+[data-semana].aberto::after{
+  background: green;
+}
