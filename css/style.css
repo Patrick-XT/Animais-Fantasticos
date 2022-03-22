@@ -507,6 +507,12 @@ html.aumento {
   font-size: 0.8rem;
 }
 
-[data-semana].aberto::after{
+[data-semana].aberto::after {
   background: green;
+}
+.btc-preco {
+  background: #3f4;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  font-weight: bold;
 }
